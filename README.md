@@ -4,6 +4,10 @@ Simple demo project with
 - Postgres database dialect
 - Spring Data JPA
 
+**Docker Compose Support** is enabled in this branch. Docker containers are automatically started, when starting the spring boot app. 
+Also, running containers are detected. This feature is very nice for developing multiple service locally, because dynamic ports can be used 
+and you don't have to remember to execute `docker compose up` and quit it afterwords. Compare this [blog article](https://spring.io/blog/2023/06/21/docker-compose-support-in-spring-boot-3-1) from the spring blog.
+
 ## Run
 
 Start local postgres instance via docker compose:
