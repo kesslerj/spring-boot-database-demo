@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  spring-boot-database-demo-postgres:
+    ports:
+      - "5451:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    image: "postgres:14"
