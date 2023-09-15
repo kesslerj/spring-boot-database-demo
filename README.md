@@ -6,6 +6,13 @@ Simple demo project with
 
 This branch includes Testcontainers to have a separate postgres db available for integration tests.
 
+Additionally, also the new **Testcontainers support** from Spring Boot 3.1 is used here. It makes the config even easier.
+
+Check out 
+- [this](https://spring.io/blog/2023/06/23/improved-testcontainers-support-in-spring-boot-3-1)  great blog article on the topic from Spring blog
+- [this](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#features.testing.testcontainers) related section in the reference documentation 
+- [this](https://testcontainers.com/guides/testing-spring-boot-rest-api-using-testcontainers/) guide from Testcontainer
+
 ## Run
 
 Start local postgres instance via docker compose:
