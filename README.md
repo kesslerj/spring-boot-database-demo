@@ -4,6 +4,8 @@ Simple demo project with
 - Postgres database dialect
 - Spring Data JPA
 
+This branch includes Testcontainers to have a separate postgres db available for integration tests.
+
 ## Run
 
 Start local postgres instance via docker compose:
