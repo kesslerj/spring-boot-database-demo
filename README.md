@@ -31,6 +31,31 @@ http localhost:8080
 ```
 using [httpie](https://github.com/httpie/cli) or simply open http://localhost:8080/ in your browser.
 
+## Native app
+
+### Buildpacks
+- result: docker image
+- compilation only, no native testing
+  - but tests must work!? executed non-native!?
+- no GraalVM installation needed
+
+- not working on ARM (e. g. M1 mac)?
+
+#### Howto
+Build docker image
+```
+mvn -Pnative spring-boot:build-image
+```
+
+Run docker image
+```
+TODO
+```
+
+### Native Build Tools
+- needs local GraalVM installation
+TODO
+
 ## Outstanding improvements
 For a productive application with database, various improvements should still be made:
 - Use Testcontainers to have a separate database for testing

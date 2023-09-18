@@ -6,3 +6,9 @@ services:
     environment:
       - POSTGRES_PASSWORD=postgres
     image: "postgres:14"
+  spring-boot-database-demo:
+    image: docker.io/library/spring-boot-database-demo:0.0.1-SNAPSHOT
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://spring-boot-database-demo-postgres:5432/postgres
