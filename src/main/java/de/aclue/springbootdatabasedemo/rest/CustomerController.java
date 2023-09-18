@@ -3,9 +3,7 @@ package de.aclue.springbootdatabasedemo.rest;
 import de.aclue.springbootdatabasedemo.persistence.CustomerEntity;
 import de.aclue.springbootdatabasedemo.persistence.CustomerRepository;
 import java.util.List;
-
 import java.util.Optional;
-import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,7 +25,7 @@ public class CustomerController {
 	}
 
 	@GetMapping("/{id}")
-	public Optional<CustomerEntity> readCustomer(@PathVariable("id") UUID id ) {
+	public Optional<CustomerEntity> readCustomer(@PathVariable("id") Long id) {
 		return customerRepository.findById(id);
 	}
 
